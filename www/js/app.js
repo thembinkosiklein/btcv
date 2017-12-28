@@ -27,6 +27,10 @@ angular.module('generic-client', ['ionic',
     'generic-client.services.contacts',
     'generic-client.services.settings',
     'generic-client.services.currency_accounts',
+    'generic-client.controllers.member_zone',
+    'generic-client.controllers.commission',
+    'generic-client.controllers.team',
+    'generic-client.controllers.genealogy',
     'generic-client.filters.contacts'])
 
     //.constant('API', 'http://localhost:8080/api/2')
@@ -521,6 +525,39 @@ angular.module('generic-client', ['ionic',
                     'menuContent': {
                         templateUrl: 'templates/member_zone/index.html',
                         controller: 'MemberZoneCtrl'
+                    }
+                }
+            })
+
+            // Member Zone | Commission
+            .state('app.commission', {
+                url: '/commission',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/member_zone/commission.html',
+                        controller: 'CommissionCtrl'
+                    }
+                }
+            })
+
+            // Member Zone | Team
+            .state('app.team', {
+                url: '/team',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/member_zone/team.html',
+                        controller: 'TeamCtrl'
+                    }
+                }
+            })
+
+            // Member Zone | Genealogy
+            .state('app.genealogy', {
+                url: '/genealogy',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/member_zone/genealogy.html',
+                        controller: 'GenealogyCtrl'
                     }
                 }
             })

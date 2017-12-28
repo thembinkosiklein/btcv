@@ -109,24 +109,24 @@ angular.module('generic-client.services.settings', [])
         var self = this;
 
         self.list = function () {
-            console.log($http.get(API + '/user/bitcoin-accounts/'));
-            return $http.get(API + '/user/bitcoin-accounts/');
+            console.log($http.get(API + '/user/crypto-accounts/'));
+            return $http.get(API + '/user/crypto-accounts/');
         };
 
         self.get = function (accId) {
-            return $http.get(API + '/user/bitcoin-accounts/' + accId + '/');
+            return $http.get(API + '/user/crypto-accounts/' + accId + '/');
         };
 
         self.update = function (accId, address) {
 
-            return $http.put(API + '/user/bitcoin-accounts/' + accId + '/', {
+            return $http.put(API + '/user/crypto-accounts/' + accId + '/', {
                 address: address
             });
         };
 
         self.create = function (address) {
 
-            return $http.post(API + '/user/bitcoin-accounts/', {
+            return $http.post(API + '/user/crypto-accounts/', {
                 address: address
             });
         };

@@ -209,6 +209,11 @@
   "LOADER_SAVING": "Saving...",
   "LOADER_ADDING": "Adding...",
   "LOADER_CHANGING_PREFERENCES": "Changing preferences...",
-  "LOADER_SWITCHING_ACCOUNT": "Switching accounts..."
+  "LOADER_SWITCHING_ACCOUNT": "Switching accounts...",
+
+  "BTCV_ZONE": "Member Zone",
+  "COMMISSION": "Commission",
+  "GENEALOGY": "Genealogy",
+  "TEAM": "Team"
 
 }

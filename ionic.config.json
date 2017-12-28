@@ -22,5 +22,12 @@
   ],
   "cordovaPlatforms": [],
   "app_id": "",
-  "type": "ionic1"
+  "type": "ionic1",
+  "integrations": {},
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
 }

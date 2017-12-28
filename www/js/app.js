@@ -514,6 +514,17 @@ angular.module('generic-client', ['ionic',
                 }
             })
 
+            // Member Zone
+            .state('app.member_zone', {
+                url: '/member_zone',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/member_zone/index.html',
+                        controller: 'MemberZoneCtrl'
+                    }
+                }
+            })
+
 
             // Help
             .state('app.help', {

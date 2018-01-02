@@ -31,6 +31,7 @@ angular.module('generic-client', ['ionic',
     'generic-client.controllers.commission',
     'generic-client.controllers.team',
     'generic-client.controllers.genealogy',
+    'generic-client.controllers.crypto_mining',
     'generic-client.filters.contacts'])
 
     //.constant('API', 'http://localhost:8080/api/2')
@@ -137,6 +138,22 @@ angular.module('generic-client', ['ionic',
                         templateUrl: 'templates/transactions/index.html',
                         controller: 'TransactionsCtrl'
                     }
+                }
+            })
+
+            // Mining
+            .state('app.crypto_mining', {
+                url: '/crypto_mining',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/crypto_mining/index.html',
+                        controller: 'CryptoMiningCtrl'
+                    }
+                },
+                params: {
+                    amount: null,
+                    currency: null,
+                    note: null
                 }
             })
 

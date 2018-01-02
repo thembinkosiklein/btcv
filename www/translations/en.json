@@ -214,6 +214,7 @@
   "BTCV_ZONE": "Member Zone",
   "COMMISSION": "Commission",
   "GENEALOGY": "Genealogy",
-  "TEAM": "Team"
-
+  "TEAM": "Team",
+  "CRYPTO_MINING": "Crypto Mining",
+  "CRYPTO_MINING_AMOUNT": "Mining Amount"
 }

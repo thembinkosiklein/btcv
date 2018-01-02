@@ -118,29 +118,29 @@ angular.module('generic-client.services.accounts', [])
         var self = this;
 
         // add authentication methods here
-        self.register = function (first_name, email, mobile_number, company_id, password1, password2) {
+        self.register = function (first_name, email, mobile_number, password1, password2) {
             return $http.post(API + '/auth/register/', {
                 first_name: first_name,
                 email: email,
                 mobile_number: mobile_number,
-                company: company_id,
+                company: 'btcvirtue',
                 password1: password1,
                 password2: password2
             })
         };
 
-        self.login = function (identifier, company_id, password) {
+        self.login = function (identifier, password) {
             return $http.post(API + '/auth/login/', {
                 user: identifier,
-                company: company_id,
+                company: 'btcvirtue',
                 password: password
             })
         };
 
-        self.resetPassword = function (identifier, company_id) {
+        self.resetPassword = function (identifier) {
             return $http.post(API + '/auth/password/reset/', {
                 user: identifier,
-                company: company_id
+                company: 'btcvirtue'
             })
         };
 

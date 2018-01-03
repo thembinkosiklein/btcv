@@ -118,7 +118,16 @@ angular.module('generic-client.services.accounts', [])
         var self = this;
 
         // add authentication methods here
-        self.register = function (first_name, email, mobile_number, password1, password2) {
+        self.register = function (sponsor, first_name, email, mobile_number, password1, password2) {
+            /*
+                @TODO
+                NB: Define process flow
+                - Validate sponsor number
+                - Save sponsor details
+                - Create new member onto database
+                - Create membership tree
+             */
+            console.log(sponsor);
             return $http.post(API + '/auth/register/', {
                 first_name: first_name,
                 email: email,

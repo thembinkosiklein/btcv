@@ -9,6 +9,17 @@
         <ion-content class="container-body" class="padding">
             <div class="list">
                 <label class="item item-input item-stacked-label">
+                    <span class="input-label" translate="SPONSOR"></span>
+                    <input ng-model="user.sponsor" type="text" name="sponsor"
+                           placeholder="{{'SPONSOR_PLACEHOLDER' | translate}}" required>
+
+                    <div ng-messages="signupForm.sponsor.$error" role="alert"
+                         ng-show='signupForm.$submitted || signupForm.sponsor.$dirty'>
+                        <div ng-message="required" class="form-error" translate="SPONSOR_REQUIRED_MESSAGE"></div>
+                        <div ng-message="sponsor" class="form-error" translate="SPONSOR_VALID_MESSAGE"></div>
+                    </div>
+                </label>
+                <label class="item item-input item-stacked-label">
                     <span class="input-label" translate="EMAIL"></span>
                     <input ng-model="user.email" type="email" name="email"
                            placeholder="{{'EMAIL_PLACEHOLDER' | translate}}" required>
